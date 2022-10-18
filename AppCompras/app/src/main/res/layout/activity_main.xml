@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Azul"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="app de compras"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="85dp"
+        android:background="@color/laranja"
+        />
+    <CheckBox
+        android:id="@+id/chkCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_marginTop="15dp"
+        android:text="carne (R$ 10,00)"
+        android:textSize="30dp"/>
+    <CheckBox
+        android:id="@+id/chkArroz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="arroz (R$ 2,69)"
+        android:textSize="30dp"/>
+    <CheckBox
+        android:id="@+id/chkLeite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:text="leite (R$ 5,00)"
+        android:textSize="30dp"/>
+    <CheckBox
+        android:id="@+id/chkFeijão"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:text="Feijão (R$ 5,00)"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/bttotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total das compras"
+        android:layout_below="@+id/chkFeijão"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="70dp"/>
+
+</RelativeLayout>

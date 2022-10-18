@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/purple_200"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App de compras"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        />
+    <CheckBox
+        android:id="@+id/chkCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitulo"
+        android:text="carne (R$ 10,00)"
+        android:textSize="30dp"
+        android:layout_margin="20dp"/>
+    <CheckBox
+        android:id="@+id/chkArroz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkCarne"
+        android:text="arroz (R$ 2,69)"
+        android:textSize="30dp"
+        android:layout_margin="20dp"/>
+    <CheckBox
+        android:id="@+id/chkLeite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkArroz"
+        android:text="leite (R$ 5,00)"
+        android:textSize="30dp"
+        android:layout_margin="20dp"/>
+    <CheckBox
+        android:id="@+id/chkFeijão"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkLeite"
+        android:text="Feijão (R$ 2,30)"
+        android:textSize="30dp"
+        android:layout_margin="20dp"/>
+    <CheckBox
+        android:id="@+id/chkRefri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkFeijão"
+        android:text="Coca-Cola (R$ 2,00)"
+        android:textSize="30dp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/bttotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total das compras"
+        android:layout_below="@+id/chkFeijão"
+        android:textSize="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
